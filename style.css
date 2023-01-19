@@ -1,0 +1,15 @@
+  .puzzle-piece {
+    width: 25%;
+    height: 25%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  #box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+  }
