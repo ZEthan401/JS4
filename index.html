@@ -14,14 +14,12 @@
 
   <script>
 
-      function mix(array) {
+function mix(array) {
     for (let i = 0; i < array.length; i++) {
         for (let s = 0; s < array[i].length; s++) {
-            let row1 = Math.floor(Math.random() * array.length);
-            let row2 = Math.floor(Math.random() * array.length);
-            let col1 = Math.floor(Math.random() * array[i].length);
-            let col2 = Math.floor(Math.random() * array[i].length);
-            [array[row1][col1], array[row2][col2]] = [array[row2][col2], array[row1][col1]];
+            let row = Math.floor(Math.random() * array.length);
+            let col = Math.floor(Math.random() * array[i].length);
+            [array[i][s], array[row][col]] = [array[row][col], array[i][s]];
         }
     }
     return array;
@@ -85,5 +83,3 @@ let puzzle = [];
   </script>
 </body>
 </html>
-
- 
